@@ -1,0 +1,182 @@
+.landing-page {
+    width: 100vw;
+    height: 100vh;
+	background-image: url('../../assets/images/arado_background.svg');
+	background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    width: 400px;
+    height: 330px;
+    background-image: url('../../assets/images/logo_arado.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+.logos-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.logo-justify {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.movie-gate {
+	width: 100px;
+    height: 100px;
+	background-image: url('../../assets/images/logo-moviegate.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: grayscale(100%);
+	opacity:0.5;
+	margin-right: 400px;
+	cursor: url('../../assets/icons/aim.png'), auto;
+}
+
+.movie-gate:hover {
+	filter: unset;
+	opacity: unset;
+	transition: 1s
+}
+
+.time-gate {
+	width: 150px;
+    height: 150px;
+	background-image: url('../../assets/images/logo-timegates.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 400px;
+	opacity:0.5;
+	cursor: url('../../assets/icons/aim.png'), auto;
+}
+
+.time-gate:hover {
+	opacity: unset;
+	transition: 01s;
+}
+
+.button {
+	position: absolute;
+	top: 70%;
+	transform: translate(-50%, -50%);
+	padding: 20px 30px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 1.2rem;
+	color: #fff;
+	letter-spacing: 1rem;
+	text-transform: uppercase;
+	transition: 0.5s;
+	user-select: none;
+	overflow: hidden;
+	cursor: url('../../assets/icons/aim.png'), auto;
+}
+
+.button:hover {
+	background-color: rgb(255, 255, 255);
+	letter-spacing: 1.3rem;
+	color: #000;
+	transition: 0.8s
+}
+
+.button:before {
+	content:'';
+	position: absolute
+}
+
+.button span:nth-child(1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to right, rgba(255, 254, 254, 0), white );
+	animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+	0% {
+		transform: translateX(-100%);
+
+	}
+	100% {
+		transform: translateX(100%);
+
+	}
+}
+
+.button span:nth-child(2) {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to bottom, rgba(255, 254, 254, 0), white );
+	animation: animate2 2s linear infinite;
+	animation-delay: 1s;
+}
+
+@keyframes animate2 {
+	0% {
+		transform: translateY(-100%);
+
+	}
+	100% {
+		transform: translateY(100%);
+
+	}
+}
+
+.button span:nth-child(3) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(to left, rgba(255, 254, 254, 0), white );
+	animation: animate3 2s linear infinite;
+	animation-delay: 2s;
+}
+
+@keyframes animate3 {
+	0% {
+		transform: translateX(100%);
+
+	}
+	100% {
+		transform: translateX(-100%);
+
+	}
+}
+
+.button span:nth-child(4) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(to top, rgba(255, 254, 254, 0), white );
+	animation: animate4 2s linear infinite;
+	animation-delay: 3s;
+}
+
+@keyframes animate4 {
+	0% {
+		transform: translateY(100%);
+
+	}
+	100% {
+		transform: translateY(-100%);
+
+	}
+}
+

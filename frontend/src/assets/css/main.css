@@ -1,14 +1,25 @@
+@font-face {
+  font-family: 'Moms_typewriter', 'Shadowed Germanica', '1942 Report';
+  src: local('Moms_typewriter'), url('../fonts/Moms_typewriter.ttf') format('truetype'),
+  local('Shadowed Germanica'), url('../fonts/Shadowed Germanica.ttf') format('truetype'), 
+  local('1942 Report'), url('../fonts/1942.ttf') format('truetype')
+}
+
+body {
+  background-color: rgb(231, 221, 189);
+}
+
 a {
   text-decoration: none !important;
 }
 
 h1 {
-  font-family: Staatliches !important;
+  font-family: 'Moms_typewriter' !important;
   font-size: 120px !important;
 }
 
 #category {
-  font-family: Staatliches !important;
+  font-family: 'Moms_typewriter' !important;
   font-weight: 500 !important;
 }
 
@@ -32,7 +43,7 @@ h1 {
 
 .uk-navbar-container {
   background: #fff !important;
-  font-family: Staatliches !important;
+  font-family: 'Moms_typewriter' !important;
 }
 
 img:hover {

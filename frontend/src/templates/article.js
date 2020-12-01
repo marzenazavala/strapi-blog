@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 import Moment from "react-moment";
 import Layout from "../components/layout";
 import Markdown from "react-markdown";
+import './Article/article.styles.css';
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
@@ -49,7 +50,7 @@ const Article = ({ data }) => {
       <div>
         <div
           id="banner"
-          className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin"
+          className="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light uk-padding uk-margin img-big"
           data-src={article.image.publicURL}
           data-srcset={article.image.publicURL}
           data-uk-img
@@ -61,7 +62,7 @@ const Article = ({ data }) => {
           <div className="uk-container uk-container-small">
             <Markdown source={article.content} escapeHtml={false} />
 
-            <hr className="uk-divider-small" />
+            <hr className="uk-divider-icon" />
 
             <div className="uk-grid-small uk-flex-left" data-uk-grid="true">
               <div>
