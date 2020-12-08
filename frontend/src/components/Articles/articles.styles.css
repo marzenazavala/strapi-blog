@@ -1,0 +1,15 @@
+.old-paper {
+    width: 90vw;
+    height: auto;
+    /* background-image: url('../../images/old_paper.png'); */
+    background-color: rgb(204, 194, 163);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    padding: 20px 30px;
+    font-family: 'Courier Prime', monospace;
+}
+
+.news-content {
+    max-width: 90vw;
+}

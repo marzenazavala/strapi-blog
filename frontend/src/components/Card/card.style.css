@@ -1,10 +1,22 @@
 .img-sepia {
     filter: sepia(100%);
-    border: 2px dashed rgb(124, 121, 110);
-    padding: 10px 5px 3px
+    padding: 10px 10px 3px 10px
 }
 
 .img-sepia:hover {
     transform: scale(1.02);
-    transition: all 2s linear;
+    transition: all 1s linear;
+}
+
+.border {
+    border: 2px dashed rgb(124, 121, 110);
+}
+
+.cursor {
+    cursor: url('../../assets/icons/aim.png'), auto;
+}
+
+.border-bottom {
+    width: 100px;
+    border-bottom: 1px dashed rgb(124, 121, 110);
 }

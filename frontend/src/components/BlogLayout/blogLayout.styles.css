@@ -1,0 +1,31 @@
+.parallax {
+    /* The image used */
+    background-image: url('../../images/war.jpg');
+    /* Set a specific height */
+    min-height: 100vh; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.paper-navbar {
+    height: 40px;
+    border-top: 2px solid rgb(124, 121, 110);
+    border-bottom: 2px solid rgb(124, 121, 110);
+    margin-bottom: 30px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: url('../../assets/icons/aim.png'), auto;
+}
+
+.navbar-item:hover {
+ font-weight: bolder;
+ color: #000
+}
+

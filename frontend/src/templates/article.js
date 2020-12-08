@@ -5,6 +5,7 @@ import Moment from "react-moment";
 import Layout from "../components/layout";
 import Markdown from "react-markdown";
 import './Article/article.styles.css';
+import Nav from "../components/nav";
 
 export const query = graphql`
   query ArticleQuery($slug: String!) {
@@ -47,6 +48,7 @@ const Article = ({ data }) => {
 
   return (
     <Layout seo={seo}>
+      <Nav />
       <div>
         <div
           id="banner"

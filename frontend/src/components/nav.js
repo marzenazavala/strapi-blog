@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, StaticQuery, graphql } from "gatsby";
+import './BlogLayout/blogLayout.styles.css';
 
 const Nav = () => (
   <StaticQuery
@@ -21,7 +22,7 @@ const Nav = () => (
     render={(data) => (
       <div>
         <div>
-          <nav className="uk-navbar-container" data-uk-navbar>
+          <nav className="uk-navbar-container paper-navbar" data-uk-navbar>
             <div className="uk-navbar-left">
               <ul className="uk-navbar-nav">
                 <li>
