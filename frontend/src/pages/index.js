@@ -9,6 +9,8 @@ import '../assets/fonts/Moms_typewriter.ttf'
 import { BrowserRouter } from 'react-router-dom';
 import LandingPage from "../sections/landingPage/LandingPage";
 import Partners from "../sections/partners/Partners";
+import Hours from '../sections/hours/Hours';
+import Tickets from "../sections/tickets/Tickets";
 
 
 const IndexPage = () => {
@@ -25,6 +27,8 @@ const IndexPage = () => {
       </div>
     </Layout>
     <Partners />
+    <Hours />
+    <Tickets />
   </BrowserRouter>
   );
 };

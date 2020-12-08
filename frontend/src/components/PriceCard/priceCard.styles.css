@@ -1,0 +1,64 @@
+.card-wrapper {
+    margin: 20px 2px;
+    padding: 10px;
+    width: 150px;
+    height: 250px;
+    background-color: rgb(218, 195, 157);
+    box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+    border-bottom: 7px dashed #000;
+    border-top: 7px dashed #000;
+    color: rgb(71, 69, 56);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-wrapper:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.card {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 10px double rgb(134, 117, 87);
+    width: 130px;
+    height: 230px;
+}
+
+.card-title {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: bold;
+    color: rgb(218, 195, 157);
+    padding: 1px;
+    background-color: rgb(82, 69, 47);
+}
+
+.card-price {
+    background-color: rgb(82, 69, 47);
+    margin: 15px;
+    padding: 2px;
+    color: rgb(218, 195, 157);
+    font-size: 20px;
+}
+
+.card-content {
+    font-size: 12px;
+    font-weight: bold;
+}
+.card-details {
+    font-size: 12px;
+}
+
+.details-border {
+    border-top: 2px dashed rgb(82, 69, 47);
+    margin: 0 10px;
+}
+
+.price-border {
+    border-top: 2px dotted rgb(82, 69, 47);
+    margin: 0 10px;
+}

@@ -1,0 +1,26 @@
+.cennik-wrapper{
+    background-color: #000;
+    padding: 50px;
+    height: auto;
+}
+.cennik-title {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 50px;
+}
+
+.guide {
+    font-size: 34px;
+    color: #fff;
+    font-family: 'UnifrakturCook', cursive;
+    text-align: center;
+    margin-top: 170px;
+    margin-bottom: 10px;
+}
+
+.price-list {
+    display: flex;
+    justify-content: center;
+}
